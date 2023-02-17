@@ -1,5 +1,6 @@
-# Title : t
-# Description : t
+# 
+# Description
+ 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -7,7 +8,7 @@
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
-## Installation : t
+## Installation : Clone the repository
 ## Usage :
 ## Contributing:
 ## Tests:

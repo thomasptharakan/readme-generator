@@ -11,7 +11,7 @@ inq
     {
         type: 'input',
         message: 'What is your user id ?',
-        name: 'userID'
+        name: 'userID',
       },
     {
       type: 'input',
@@ -27,15 +27,16 @@ inq
         type: 'input',
         message: 'What are the installation steps  ?',
         name: 'installationSteps',
+        default:'Clone the repository'
       },
       {
         type: 'list',
         message: 'Select a License ?',
         name: 'License',
-        choice : Object.keys(licenseChoice);
+        choices : Object.keys(licenseChoice),
       },
       {
-        type: 'input',
+        type: 'editor',
         message: 'Provide Contributor Steps',
         name: 'contributorSteps',
       },
@@ -60,10 +61,15 @@ inq
     '- [License](#license)\n'+
     '- [Questions](#questions)\n';
 
-    let readme = `# Title : ${answers.title}\n`;
-    readme += `# Description : ${answers.description}\n`;
+    let readme = `# ${answers.title}\n`;
+    readme += `# Description\n ${answers.description}\n`;
     readme += toc;
-    readme +=  `## Installation : ${answers.installationSteps}\n`;
+    readme +=  `## Installation\n `
+    readme += `Clone the repository\n`
+    readme += `\`\`\``;
+    readme += `\`\`\``;
+    readme += `To install necessary dependencies\n`;
+    readme == `${answers.installationSteps}\n`;
     readme +=  `## Usage :\n`;
     readme += `## Contributing:\n`;
     readme += `## Tests:\n`;
