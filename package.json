@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "The application asks the users a set of questions to produce a formatted README file in the export folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasptharakan/readme-generator.git"
+  },
+  "keywords": [
+    "readme-generator"
+  ],
+  "author": "Thomas Tharakan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/thomasptharakan/readme-generator/issues"
+  },
+  "homepage": "https://github.com/thomasptharakan/readme-generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^6.5.1"
+  }
+}
