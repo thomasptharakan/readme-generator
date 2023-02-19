@@ -4,10 +4,9 @@ function generateMarkdown(answers,licenseChoice,badgeChoice) {
   const toc = '## Table of Contents\n' +
     '- [Installation](#installation)\n' +
     '- [Usage](#usage)\n' +
-    '- [Contributing](#contributing)\n' +
-    '- [Tests](#tests)\n' +
     '- [License](#license)\n' +
     '- [Contributing](#contributing)\n' +
+    '- [Tests](#tests)\n' +
     '- [Questions](#questions)\n';
 
   //Declare readme variable and initialise with titie
