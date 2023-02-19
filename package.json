@@ -21,6 +21,7 @@
   "homepage": "https://github.com/thomasptharakan/readme-generator#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^6.5.1"
+    "inquirer": "^6.5.1",
+    "path": "^0.12.7"
   }
 }
