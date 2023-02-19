@@ -9,6 +9,8 @@ const licenseChoice = {
     'Eclipse Public License 1.0':'[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
 }
 
+
+
 inq
 .prompt([
     {
@@ -81,6 +83,7 @@ inq
     '- [Contributing](#contributing)\n'+
     '- [Tests](#tests)\n'+
     '- [License](#license)\n'+
+    '- [Contributing](#contributing)\n'+
     '- [Questions](#questions)\n';
 
     //Declare readme variable and initialise with titie
@@ -105,7 +108,10 @@ inq
     readme += `\`\`\`\n`;
     //Add Usage Section
     readme +=  `## Usage\n`;
-    readme += answers.usage + '\n';
+    readme += `You can use this application by running\n`;
+    readme += `\`\`\`\n`;
+    readme += `${answers.usage}\n`;
+    readme += `\`\`\`\n`;
     //Adding Licensing section
     readme += `## License\n`;
     readme += `This project is licensed under the ${answers.license}\n`
@@ -113,7 +119,7 @@ inq
     readme += `## Contributing\n`;
     //Generate default block for Repository Contributors
     if (answers.contributorSteps === 'Email-Admin'){
-        readme += `Please email admin at ${answers.emailID} for any updates you would like to include.\n`;
+        readme += `Please email admin at ${answers.emailID} for any fixes/changes you would like to include.\n`;
     }else{
         readme += `${answers.contributorSteps}\n`;
     }
