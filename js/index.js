@@ -111,12 +111,12 @@ function generateBaseFile(answers) {
   //Add installation steps
   readme += `## Installation\n `
   //Add Steps for cloning repo
-  readme += `Clone the repository\n`
+  readme += ` - Clone the repository\n`
   readme += `\`\`\`\n`;
   //Build Repo URL from in userid and repository name
   readme += `https://github.com/${answers.userID}/${answers.repositoryName}\n`;
   readme += `\`\`\`\n`;
-  readme += `To install necessary dependencies\n`;
+  readme += ` - To install necessary dependencies\n`;
   readme += `\`\`\`\n`;
   readme += `${answers.installationSteps}\n`
   readme += `\`\`\`\n`;
@@ -146,13 +146,14 @@ function generateBaseFile(answers) {
   //Add questions Section
   readme += `## Questions:\n`;
   readme += `If you have any questions about the repo, or would like to open an issue, please contact admin directly at ${answers.emailID}.`
-  readme += `You can find more of my work at https://github.com/${answers.userID}\n`
+  readme += ` You can find more of my work at https://github.com/${answers.userID}\n`
   //Add addtional Badges
-  readme += `#\n`
+  readme += `<br/><br/><br/>\n`;
+  readme += `#\n`;
   for (i in answers.badges) {
     readme += ` ${badgeChoice[answers.badges[i]]} `;
   }
-  readme += `#\n`;
+  readme += `\n#\n`;
   // Write to file 
   fs.writeFile('../export/README.md', readme, (err) => err ? console.error(err) : console.log('Added Title!'));
 }

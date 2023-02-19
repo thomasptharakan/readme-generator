@@ -11,16 +11,16 @@
 - [Contributing](#contributing)
 - [Questions](#questions)
 ## Installation
- Clone the repository
+  - Clone the repository
 ```
 https://github.com/thomasptharakan/readme-generator
 ```
-To install necessary dependencies
+- To install necessary dependencies
 ```
 npm install
 ```
 ## Usage
-You can use this application by running 
+You can use this application by running
 ```
 node index.js
 ```
@@ -34,4 +34,8 @@ To run tests, run the following command
 npm test
 ```
 ## Questions:
-If you have any questions about the repo, or would like to open an issue, please contact admin directly at thomasptharakan@gmail.com.You can find more of my work at https://github.com/thomasptharakan
+If you have any questions about the repo, or would like to open an issue, please contact admin directly at thomasptharakan@gmail.com. You can find more of my work at https://github.com/thomasptharakan
+<br/><br/><br/>
+#
+ [![made-for-VSCode](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://code.visualstudio.com/)  [![Node JS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en/)  [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://nodejs.org/en/)  [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/) 
+#
