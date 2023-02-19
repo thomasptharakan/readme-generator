@@ -20,7 +20,7 @@ To install necessary dependencies
 npm install
 ```
 ## Usage
-You can use this application by running 
+You can use this application by running
 ```
 node index.js
 ```
@@ -35,3 +35,5 @@ npm test
 ```
 ## Questions:
 If you have any questions about the repo, or would like to open an issue, please contact admin directly at thomasptharakan@gmail.com.You can find more of my work at https://github.com/thomasptharakan
+#
+ [![made-for-VSCode](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://code.visualstudio.com/)  [![Node JS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en/)  [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://nodejs.org/en/)  [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3schools.com/html/)  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/) #
