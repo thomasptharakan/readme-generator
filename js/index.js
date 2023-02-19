@@ -86,7 +86,7 @@ inq
     //Declare readme variable and initialise with titie
     let readme = `# ${answers.title}\n`;
     // Add Licence Badge
-    readme += `Object.values(answers.license)\n`;
+    readme += `${licenseChoice[answers.license]}\n`;
     //Add Description Section
     readme += `## Description\n ${answers.description}\n`;
     //Add Table of Conteents
@@ -113,19 +113,19 @@ inq
     readme += `## Contributing\n`;
     //Generate default block for Repository Contributors
     if (answers.contributorSteps === 'Email-Admin'){
-        readme += `Please email admin at ${answers.emailid} for any updates you would like to include.\n`;
+        readme += `Please email admin at ${answers.emailID} for any updates you would like to include.\n`;
     }else{
         readme += `${answers.contributorSteps}\n`;
     }
     //Add Tests Section
     readme += `## Tests\n`;
-    readme += `To run test,run the following command\n`;
+    readme += `To run tests, run the following command\n`;
     readme += `\`\`\`\n`;
     readme += `${answers.testingSteps}\n`
     readme += `\`\`\`\n`;
     //Add questions Section
     readme += `## Questions:\n`;
-    readme += `If you have any questions about the repo, or would like to open an issue, please contact admin directly at ${answers.emailid}.`
+    readme += `If you have any questions about the repo, or would like to open an issue, please contact admin directly at ${answers.emailID}.`
     readme += `You can find more of my work at https://github.com/${answers.userID}\n`
 
     // Write to file 
