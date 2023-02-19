@@ -9,6 +9,14 @@ const licenseChoice = {
     'Eclipse Public License 1.0':'[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
 }
 
+const badgeChoice = {
+  'VsCode' :'[![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)',
+  'Node' : 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+  'NPM' : 'https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white',
+  'JavaScript' : 'https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E',
+  'HTML5': '	https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white',
+  'CSS3' : 'https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white'
+}
 
 
 inq
@@ -68,6 +76,12 @@ inq
         name: 'testingSteps',
         default: 'npm test'
       },
+      {
+        type:'checkbox',
+        message: 'Select any additional badges you would like to include',
+        name:'badges',
+        choices : Object.keys(badgeChoice)
+      }
   ]) .then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
     generateBaseFile(answers);
